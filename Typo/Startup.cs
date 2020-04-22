@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Typo.Models;
+using Typo.Dto;
+using Typo.Services;
 
 namespace Typo
 {
@@ -20,13 +24,23 @@ namespace Typo
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddDbContext<ConnectionDbContext>(opts => opts.UseSqlServer(Configuration["ConnectionStrings:MyConnection"]));
+            services.AddScoped<WordService>();
+            services.AddControllers();
+            services.AddCors();
+
+            var config = new AutoMapper.MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Word, WordDto>();
+                cfg.CreateMap<WordDto, Word>();
+            });
+
+            var mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
