@@ -25,6 +25,9 @@ namespace Typo.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("NLetters")
+                        .HasColumnType("int");
+
                     b.Property<string>("Text")
                         .HasColumnType("nvarchar(max)");
 
@@ -36,26 +39,31 @@ namespace Typo.Migrations
                         new
                         {
                             Id = 1L,
+                            NLetters = 4,
                             Text = "ciao"
                         },
                         new
                         {
                             Id = 2L,
+                            NLetters = 4,
                             Text = "come"
                         },
                         new
                         {
                             Id = 3L,
+                            NLetters = 4,
                             Text = "stai"
                         },
                         new
                         {
                             Id = 4L,
+                            NLetters = 4,
                             Text = "oggi"
                         },
                         new
                         {
                             Id = 5L,
+                            NLetters = 10,
                             Text = "pomeriggio"
                         });
                 });

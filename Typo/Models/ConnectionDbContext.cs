@@ -13,28 +13,6 @@ namespace Typo.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Word>().HasData(new Word
-            {
-                Id = 1,
-                Text = "ciao"
-
-            }, new Word
-            {
-                Id = 2,
-                Text = "come"
-            }, new Word
-            {
-                Id = 3,
-                Text = "stai"
-            }, new Word
-            {
-                Id = 4,
-                Text = "oggi"
-            }, new Word
-            {
-                Id = 5,
-                Text = "pomeriggio"
-            });
         }
     }
 }

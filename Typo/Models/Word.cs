@@ -9,6 +9,7 @@ namespace Typo.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
         public string Text { get; set; }
+        public int NLetters { get; set; }
 
         public Word()
         {

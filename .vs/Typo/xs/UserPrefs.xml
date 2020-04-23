@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{90F4C328-6456-4C33-A744-700A34AE2844}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Typo/Models/Word.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Typo/Models/ConnectionDbContext.cs">
     <Files>
       <File FileName="Typo/appsettings.json" Line="3" Column="44" />
-      <File FileName="Typo/Startup.cs" Line="29" Column="127" />
-      <File FileName="Typo/Models/Word.cs" Line="15" Column="1" />
-      <File FileName="Typo/Dto/WordDto.cs" Line="7" Column="27" />
-      <File FileName="Typo/Services/WordService.cs" Line="10" Column="55" />
-      <File FileName="Typo/Models/ConnectionDbContext.cs" Line="19" Column="21" />
-      <File FileName="Typo/Program.cs" Line="16" Column="1" />
-      <File FileName="Typo/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Typo/Startup.cs" />
+      <File FileName="Typo/Models/Word.cs" Line="12" Column="42" />
+      <File FileName="Typo/Dto/WordDto.cs" Line="12" Column="1" />
+      <File FileName="Typo/Services/WordService.cs" />
+      <File FileName="Typo/Models/ConnectionDbContext.cs" Line="15" Column="10" />
+      <File FileName="Typo/Program.cs" />
+      <File FileName="Typo/Properties/launchSettings.json" />
+      <File FileName="Typo/Migrations/20200423205424_addedLenght.cs" Line="26" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +20,10 @@
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
               <Node name="Dto" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="ConnectionDbContext.cs" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
