@@ -58,6 +58,8 @@ namespace Typo
 
             app.UseRouting();
 
+            app.UseCors(bb => bb.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
