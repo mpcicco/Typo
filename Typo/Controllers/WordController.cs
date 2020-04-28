@@ -29,6 +29,13 @@ namespace Typo.Controllers
             return Ok(word);
         }
 
+        [HttpGet("custom")]
+        public IActionResult GetCustom()
+        {
+            var customWord = _mapper.Map<List<CustomWordDto>>(_wordService.GetAllCustom());
+            return Ok(customWord);
+        }
+
         // GET: api/Employee/5
         [HttpGet("{id}", Name = "Get")]
         public IActionResult Get(int id)

@@ -1,0 +1,16 @@
+<div class="container-fluid d-flex h-100 flex-column">
+    <div class="row flex-fill d-flex">
+        <div class="col-lg-12 text-center" mat-dialog-title>
+            <h1 class="title">TEMPO SCADUTO</h1>
+        </div>
+        <div class="col-lg-12 text-center">
+            <img class="immagine" src="assets/img/niu_after.png">
+            <p class="scoreLabel">Score</p>
+            <p class="scoreValue">{{score}}</p>
+        </div>
+        <div class="col-lg-12 footer">
+            <button class="float-right homeBtn" mat-raised-button (click)="goHome()">Home</button>
+            <button class="float-right playBtn" float-right mat-raised-button (click)="playAgain()">Riprova</button>
+        </div>
+    </div>
+</div>

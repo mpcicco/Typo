@@ -1,13 +1,21 @@
-HOME PAGE
-<br>
-{{currentWord?.text}}
-<br>
-<input (keyup)="onKey($event)" [value]="userWord">
-<p>{{userWord}}</p>
-<p>{{test}}</p>
-
-<button (click)='startGame()'>START</button>
-<button (click)='exitGame()'>ESCI</button>
-
-<p>Timer {{timeLeft}}</p>
-<p>Score {{score}}</p>
+<div class="page">
+    <div class="row justify-content-center ">
+        <div class="typewriter">
+            <h1 class="title">Typo</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="menu">
+            <button mat-raised-button class="large" routerLink="/wordi-bomb">
+                <mat-icon class="timer-icon">timer</mat-icon>Wordi Bomb
+            </button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="menu">
+            <button mat-raised-button class="large" routerLink="">
+                Rough Word
+            </button>
+        </div>
+    </div>
+</div>

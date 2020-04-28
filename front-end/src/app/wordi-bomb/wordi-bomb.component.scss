@@ -1,0 +1,94 @@
+textarea, select, input, button { outline: none; }
+h1 { 
+    margin-top: 0; 
+}
+
+.page{
+    height: 100%;
+    width: 100%;
+    margin: 0px; 
+    padding: 0px; 
+    background: #212529;
+}
+
+.title{
+    font-size: 90px;
+    font-family: 'Bungee Shade', cursive;
+    line-height: 130px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+.chooseDifficult{
+    font-size: 30px;
+    padding-top: 10px;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.mat-raised-button.large {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.mat-raised-button.large.easy {
+    background-color: #1B998B;
+}
+.mat-raised-button.large.medium {
+    background-color: orange;
+}
+.mat-raised-button.large.hard {
+    background-color: #D64933;
+}
+.word{
+    font-size: 60px;
+    font-family: 'Roboto';
+    line-height: 130px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+input{
+    width: 80%;
+    height: 50px;
+    border-radius: 18px;
+    border-width: 0px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.home {
+    margin-top: 20px;
+    width: 50px;
+    font-size: 12px;
+    height: 50px;
+    color: #212529;
+    background-color: white;
+    .mat-icon {
+      line-height: 18px;
+    }
+}
+.info{
+    padding-top: 30px;
+    display:inline-block;
+    text-align: center;
+    
+}
+
+.infoLabel{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.infoValue{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+    
+    font-size: 30px;
+}
+
+

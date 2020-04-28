@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { WordiBombComponent } from './wordi-bomb/wordi-bomb.component';
 
 
 const routes: Routes = [
-  /*{
-    path: 'scenario/:titoloScenario',
-    component: ScenarioComponent,
+  {
+    path: 'home',
+    component: HomeComponent,
   },
+  {
+    path: 'wordi-bomb',
+    component: WordiBombComponent,
+  },
+  /*
   { path: '', redirectTo: '/scenario/-', pathMatch: 'full' },
   { path: '**', redirectTo: '/scenario/-' }*/
 

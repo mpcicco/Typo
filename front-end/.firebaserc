@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "typo-9d5f5": {
+      "hosting": {
+        "front-end": [
+          "typo-9d5f5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "typo-9d5f5"
+  }
+}

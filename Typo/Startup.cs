@@ -35,6 +35,8 @@ namespace Typo
             {
                 cfg.CreateMap<Word, WordDto>();
                 cfg.CreateMap<WordDto, Word>();
+                cfg.CreateMap<CustomWord, CustomWordDto>();
+                cfg.CreateMap<CustomWordDto, CustomWord>();
             });
 
             var mapper = config.CreateMapper();

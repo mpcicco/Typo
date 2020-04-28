@@ -1,0 +1,52 @@
+h1 { 
+    margin-top: 0; 
+}
+
+.page{
+    height: 100%; 
+    margin: 0px; 
+    padding: 0px; 
+    background: #e3e3e3;
+}
+
+.title{
+    font-size: 140px;
+    font-family: 'Baloo Tamma 2', cursive;
+    line-height: 130px;
+    padding-top: 10px;
+}
+
+.menu{
+    padding-top: 3%;
+}
+
+.mat-raised-button.large {
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+    background-color: #212529;
+    color: white;
+
+    .mat-icon {
+      font-size: 38px;
+      width: 48px;
+      height: 48px;
+      line-height: 44px;
+    }
+  }
+
+.typewriter h1 {
+    margin-top:100px; 
+    margin-bottom:80px;   
+    padding-right: 15px;    
+    border-right: .10em solid orange; /* The typwriter cursor */
+    animation: 
+    blink-caret .75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}

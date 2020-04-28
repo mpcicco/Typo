@@ -1,0 +1,34 @@
+textarea, select, input, button { outline: none; }
+
+.title{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 50px;
+    margin-bottom: -20px;
+}
+.immagine{
+    width: 150px;
+    height: 150px;
+    margin-bottom: -30px;
+}
+.scoreLabel{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+.scoreValue{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: orange;
+}
+
+.homeBtn{
+    margin-left: 10px;
+}
+.playBtn{
+    background-color: orange;
+}
+
+.footer{
+    padding-bottom: 5px;
+}
